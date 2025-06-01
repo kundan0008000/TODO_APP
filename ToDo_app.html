@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="ToDo_app.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>ToDo App</h1>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </header>
+        <main>
+            <section class="task-input">
+                <input type="text" id="task-input" placeholder="Enter a new task">
+                <select id="task-priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button id="add-task">Add</button>
+            </section>
+            <section class="task-filters">
+                <button id="filter-all">All</button>
+                <button id="filter-completed">Completed</button>
+                <button id="filter-incomplete">Incomplete</button>
+            </section>
+            <ul id="task-list"></ul>
+        </main>
+    </div>
+    <script src="ToDo_app.js"></script>
+</body>
+</html>
